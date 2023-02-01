@@ -1,0 +1,90 @@
+﻿<Window x:Class="library.reg"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:library"
+        mc:Ignorable="d"
+        Title="reg" Height="750" Width="1300">
+    <StackPanel>
+        <StackPanel.Background >
+
+            <ImageBrush Opacity="0.9" ImageSource = "C:\Users\rubhi\Downloads\lib8.jpg"></ImageBrush>
+        </StackPanel.Background>
+        <Border BorderBrush="Gray" Background="Black"  Opacity="0.6"  BorderThickness="2" Margin="60" Height="650" >
+            <Border.Effect>
+                <DropShadowEffect Color="Black" ShadowDepth="7" Opacity="0.3"></DropShadowEffect>
+            </Border.Effect>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="92*"></RowDefinition>
+                    <RowDefinition Height="25*"></RowDefinition>
+                    <RowDefinition Height="59*"></RowDefinition>
+                    <RowDefinition Height="59*"></RowDefinition>
+                    <RowDefinition Height="59*"></RowDefinition>
+                    <RowDefinition Height="59*"></RowDefinition>
+                    <RowDefinition Height="59*"></RowDefinition>
+                    <RowDefinition Height="59*"></RowDefinition>
+                    <RowDefinition Height="59*"></RowDefinition>
+                    <RowDefinition Height="59*"></RowDefinition>
+                    <RowDefinition Height="59*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="82*"></ColumnDefinition>
+                    <ColumnDefinition Width="48*"></ColumnDefinition>
+                    <ColumnDefinition Width="65*"></ColumnDefinition>
+                    <ColumnDefinition Width="65*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Label Content=" &quot; Reading makes you Smart!!! &quot;"  Foreground="White" FontWeight="ExtraBold" Grid.Row="0" Grid.ColumnSpan="4" FontSize="30" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Comic Sans MS" Margin="174,-10,118,35" ></Label>
+
+                <Label Foreground="IndianRed" FontWeight="UltraBold" Grid.ColumnSpan="4" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Comic Sans MS" Margin="174,43,118,2" >
+                    <TextBlock>
+                        <Underline>Wanna be Smart?? Register Here!!!! </Underline>
+                    </TextBlock>
+                </Label>
+
+                <Label Content="NAME" Grid.Row="2" FontSize="20" Foreground="White" FontWeight="ExtraBold" VerticalContentAlignment="Center" Margin="368,15,0,1" Grid.ColumnSpan="2"/>
+                <TextBox x:Name="txtname" Grid.Row="2" Grid.Column="2" FontSize="18" VerticalContentAlignment="Bottom" BorderBrush="White" BorderThickness="2" Background="Black" Foreground="Gray" FontWeight="ExtraBold"  Margin="3,19,127,13"/>
+
+                <Label Content="DATE OF BIRTH" Grid.Row="3" FontSize="20" Foreground="White" FontWeight="ExtraBold" VerticalContentAlignment="Center" Margin="368,5,0,1" Grid.ColumnSpan="2"/>
+                <TextBox x:Name="txtdob" Grid.Row="3" Grid.Column="2" FontSize="18" VerticalContentAlignment="Bottom" BorderBrush="White" BorderThickness="2" Background="Black" Foreground="Gray" FontWeight="ExtraBold"   Margin="3,19,127,13"></TextBox>
+
+                <Label Content="GENDER" Grid.Row="4" FontSize="20" Foreground="White" FontWeight="ExtraBold" VerticalContentAlignment="Center" Grid.ColumnSpan="2" Margin="368,5,0,0"/>
+                <StackPanel Orientation="Horizontal" Grid.Row="4" Grid.ColumnSpan="2"   Grid.Column="2" VerticalAlignment="Center" Margin="15,0,15,0" Height="30" >
+                    <RadioButton Content="Male   " FontSize="23" Foreground="White" FontWeight="ExtraBold" VerticalContentAlignment="Center"></RadioButton>
+                    <RadioButton Content="Female  " FontSize="23" Foreground="White" FontWeight="ExtraBold" VerticalContentAlignment="Center"></RadioButton>
+                    <RadioButton Content="Transgender" FontSize="23" Foreground="White" FontWeight="ExtraBold" VerticalContentAlignment="Center"></RadioButton>
+                </StackPanel>
+                <Label Content="PHONE NUMBER" Grid.Row="4" FontSize="20" Foreground="White" FontWeight="ExtraBold" VerticalContentAlignment="Center" Grid.ColumnSpan="2" Margin="368,59,0,5" Grid.RowSpan="2"/>
+                <TextBox x:Name="txtnum" Grid.Row="5" Grid.Column="2" FontSize="18" VerticalContentAlignment="Bottom" BorderBrush="White" BorderThickness="2" Background="Black" Foreground="Gray" FontWeight="ExtraBold"  Margin="3,19,127,13"></TextBox>
+
+                <Label Content="EMAIL ID" Grid.Row="7" FontSize="20" Foreground="White" FontWeight="ExtraBold" VerticalContentAlignment="Center" Grid.ColumnSpan="2" Margin="368,0,0,5"/>
+                <TextBox x:Name="txtmail" Grid.Row="7" Grid.Column="2" FontSize="18" VerticalContentAlignment="Bottom" BorderBrush="White" BorderThickness="2" Background="Black" Foreground="Gray" FontWeight="ExtraBold"   Margin="3,19,127,13"></TextBox>
+
+                <Label Content="PASSWORD" Grid.Row="8" FontSize="20" Foreground="White" FontWeight="ExtraBold" VerticalContentAlignment="Center" Grid.ColumnSpan="2" Margin="368,0,0,4"/>
+                <PasswordBox x:Name="pswd" Grid.Row="8" Grid.Column="2" FontSize="18" VerticalContentAlignment="Bottom" BorderBrush="White" BorderThickness="2" Background="Black" Foreground="Gray" FontWeight="ExtraBold"  Margin="3,19,127,0" Height="27" VerticalAlignment="Top"></PasswordBox>
+
+                <Label Content="SELECT LANGUAGES" Grid.Row="6" FontSize="20" Foreground="White" FontWeight="ExtraBold" VerticalContentAlignment="Center" Grid.ColumnSpan="2" Margin="368,0,0,59" Grid.RowSpan="2"/>
+                <StackPanel Orientation="Horizontal" Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="2" VerticalAlignment="Center" Margin="15,0,15,0" Height="30" >
+                    <CheckBox Content="Tamil  " FontSize="23" Foreground="White" FontWeight="ExtraBold" VerticalContentAlignment="Center"></CheckBox>
+                    <CheckBox Content="English  " FontSize="23" Foreground="White" FontWeight="ExtraBold" VerticalContentAlignment="Center"></CheckBox>
+                    <CheckBox Content="Hindi  " FontSize="23" Foreground="White" FontWeight="ExtraBold" VerticalContentAlignment="Center"></CheckBox>
+                    <CheckBox Content="Malayalam  " FontSize="23" Foreground="White" FontWeight="ExtraBold" VerticalContentAlignment="Center"></CheckBox>
+                </StackPanel>
+
+                <Label Content="ADDRESS" Grid.Row="9" FontSize="20" Foreground="White" FontWeight="ExtraBold" VerticalContentAlignment="Center" Grid.ColumnSpan="2" Margin="368,5,0,0"/>
+                <TextBox x:Name="txtadd" Grid.Row="9" Grid.Column="2" FontSize="18" AcceptsReturn="True" VerticalContentAlignment="Top" BorderBrush="White" BorderThickness="2" Background="Black" Foreground="Gray" FontWeight="ExtraBold"   Margin="3,11,112,34" Grid.RowSpan="2"></TextBox>
+
+                <Button Content="REGISTER" Grid.Row="8" Grid.Column="3" Margin="73,43,52,26" FontSize="20" Click="Button_Click" Background="White" Foreground="Black" FontWeight="ExtraBlack" Grid.RowSpan="2" BorderBrush="IndianRed" BorderThickness="8"/>
+            </Grid>
+
+        </Border>
+
+
+
+    </StackPanel>
+
+
+</Window>
